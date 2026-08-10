@@ -174,7 +174,7 @@
 
 
 # PPT Format
-Title
-Project title
-Adv. and applications
-limitations in prior/current available version
+1. Title
+2. Project title
+3. Adv. and applications
+4. limitations in prior/current available version
