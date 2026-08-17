@@ -174,7 +174,71 @@
 
 
 # PPT Format
-1. Title
-2. Project title
-3. Adv. and applications
-4. limitations in prior/current available version
+Title
+Project title
+Adv. and applications
+limitations in prior/current available version
+
+
+
+- Student Hierarchy
+
+# PPT
+## Title: Hostel Management
+### The Problem Scenario
+- Management isn't aware about the vacant rooms
+- Complaints are one way communications
+- No Prior Information about the visits
+- They might come when you are unavailable
+### The Available Solutions
+- ERP
+### Problems with Available Solutions
+- Roommate changes is not reflected in the ERP
+- No Complaint No. assigned
+- No Limited Time Frame for Solutions
+- No contact Details of Skilled Personals in ERP
+- No way of knowing the complaint is assigned to someone
+### Our Solution (What we Bring to the table)
+#### Functionalities
+###### For Students
+- Centralized Complaint System
+	- With Status
+- Allocations Details
+- Choice Filling (Mess, Hostel)
+- Prior notification regarding Skilled Personals visit
+- Authorities will be in the loop and will know the number of problems unresolved
+###### For Authorities
+- no. of Vacant Rooms and room details
+- Pending Issues to be resolved
+- Connected to the Ground reality
+
+# Hostel Data
+
+| S.No | Hall of Residence           | No. of Rooms | Single/Double         | Total Capacity |
+| ---- | --------------------------- | ------------ | --------------------- | -------------- |
+| 1    | Azad Hall                   | 100          | Single                | 98             |
+| 2    | Bose Hall                   | 100          | Single                | 98             |
+| 3    | Ambedkar Hall               | 48           | Double                | 94             |
+| 4    | Babha Hall                  | 48           | Double                | 94             |
+| 5    | Gandhi Hall                 | 48           | Double                | 94             |
+| 6    | Gokhale Hall                | 48           | Double                | 94             |
+| 7    | Radhakrishnan Hall          | 48           | Double                | 94             |
+| 8    | Raman Hall                  | 48           | Double                | 94             |
+| 9    | Nehru Hall                  | 100          | Single                | 98             |
+| 10   | Patel Hall                  | 100          | Single                | 98             |
+| 11   | Tagore Hall                 | 48           | Double                | 94             |
+| 12   | Viswesvraya Hall            | 48           | Double                | 94             |
+| 13   | Rajendra Prasad Hall        | 202          | Single                | 198            |
+| 14   | Vikram Sarabhai Hall        | 150          | Single                | 198            |
+| 15   | Kakatiya Hall of Residence  | 1050         | Single                | 1050           |
+| 16   | Ramappa Hall of Residence   | 1194         | Single-640 Double-554 | 640+1108 =1748 |
+| 17   | International Students Hall | 150          | Single                | 150            |
+
+
+| S.No | Hall of Residence  | No. of Rooms | Single/Double | Total Capacity |
+| ---- | ------------------ | ------------ | ------------- | -------------- |
+| 1    | Priyadarshini Hall | 75           | Triple        | 225            |
+| 2    | Sarojini Hall      | 65           | Double        | 130            |
+| 3    | New LH-A           | 120          | Single        | 120            |
+| 4    | New LH-B           | 110          | Single        | 110            |
+| 5    | New LH-C           | 90           | Single        | 90             |
