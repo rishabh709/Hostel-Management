@@ -1,32 +1,14 @@
-
-## Hostel allotment
-### Required Data
-- Building Data
-	- Building number
-	- Hall Name
-	- Capacity
-	- Floors
-	- Rooms
-		- Room number
-		- Room state (under Construction, vacant, occupied )
-		- Accommodation Capacity
-		- Residing students id
-		- number of occupants 
-
----
 # Identify
 ## Stakeholders
 ### 1. Students
-#### Tasks or Actions
-### 2. Hostel Office
-#### Job Role: ___
-#### Tasks or Actions
+### 2. Authorities
+### 3. Staff
 ## Functional Requirements
 - Choice filling
-	- Floors
-	- Single/Double sharing room
+	- Floors (Maybe)
+	- Single/Double sharing room (Maybe)
 	- roommates
-- Complaints
+- Student can File Complaints 
 	- Status
 	- Expected time
 - Contact Details of Respective Authorities
@@ -35,9 +17,24 @@
 	- Electrician
 	- Plumber
 	- Carpenter
-	- HR
-	- MR
-	- etc...
+- Authorities can overlook the staff's current assignment
+- Authorities can overlook the pending Complaints and resolved Complaints
+- Authorities can set priorities of tasks for the Staff
+- Authorities can see the feedbacks
+- Staff must be able to see the pending complaints
+- Staff Must be able to self assign a Complaint and update when resolved
+- Automatic Task Scheduling for Staff should be implemented for efficient and effective work based on priority and distance. (Low priority)
+- student must be able to see the expected visits
+- student must be able to see the complaint status/assigned staff
+- student can set their availability
+- student can write feedback
+
+## Non-Functional Requirements
+- **Robust:** The changes should be reflected within few min
+- **Reliability:** The Software must be consistent with on ground data(Phone numbers).
+- **Security:** The Personal details must be secured. Data should transfer over Secured Channels(HTTPS)
+- **Scalability:** The diagrams and SRS must be maintained with well defined explanations for project to be scaled and also must entertain at most ___500 transactions/sec___ (May Change).
+- **Maintainability:** The Diagrams and SRS must be maintained and project must be modular in nature to ease in development and maintenance.
 
 
 # Users/Stakeholders
@@ -166,9 +163,10 @@
 <img width="1890" height="622" alt="image" src="https://github.com/user-attachments/assets/4e56c278-5590-4fbc-896d-13d663342054" />
 
 
+
 ## Issues with existing Solution
 1. No Complaint status
-2. No choice for roommates/mess etc...
+2. No choice for roommates
 3. Expected visits of skilled personals 
 4. Each personals will have there dashboards showing respective information's
 	- increasing transparency
@@ -190,7 +188,7 @@ limitations in prior/current available version
 ### The Problem Scenario
 - Management isn't aware about the vacant rooms
 - Complaints are one way communications
-- No Prior Information about the visits
+- No Prior Information about the staff visits
 - They might come when you are unavailable
 ### The Available Solutions
 - ERP
@@ -200,26 +198,42 @@ limitations in prior/current available version
 - No Limited Time Frame for Solutions
 - No contact Details of Skilled Personals in ERP
 - No way of knowing the complaint is assigned to someone
+- No way to know the timed visit of the Skilled Personal 
 ### Our Solution (What we Bring to the table)
-#### Functionalities
+#### Functionalities of Stakeholders
 ###### For Students
 - Centralized Complaint System
 	- With Status
 - Allocations Details
-- Choice Filling (Mess, Hostel)
+- Choice Filling (Roommates, Hostel, Rooms, Floor)
 - Prior notification regarding Skilled Personals visit
 - Authorities will be in the loop and will know the number of problems unresolved
 ###### For Authorities
 - no. of Vacant Rooms and room details
 - Pending Issues to be resolved
 - Connected to the Ground reality
+###### For Staff (Skilled Personal)
+- Overlook the complaints
+- Pending issues to be resolved
+- Can Assigns to self
+- Status Update
+
+
 
 # Hostel Data
-- Hostel Authority Structure
-	- Chief Warden
-		- Wardens (Warden and Assistant warden)
-			- Caretaker
-			- HR
+### Required Data
+- Building Data
+	- Building number
+	- Hall Name
+	- Capacity
+	- Floors
+	- Rooms
+		- Room number
+		- Room state (under Construction, vacant, occupied )
+		- Accommodation Capacity
+		- Residing students id
+		- number of occupants 
+
 
 | S.No | Hall of Residence           | No. of Rooms | Single/Double         | Total Capacity |
 | ---- | --------------------------- | ------------ | --------------------- | -------------- |
@@ -249,6 +263,8 @@ limitations in prior/current available version
 | 3    | New LH-A           | 120          | Single        | 120            |
 | 4    | New LH-B           | 110          | Single        | 110            |
 | 5    | New LH-C           | 90           | Single        | 90             |
+
+
 
 
 
