@@ -160,9 +160,11 @@
 # Existing Solution
 ## Complaint Form
 
-![[Pasted image 20260810102942.png]]
+<img width="1030" height="842" alt="image" src="https://github.com/user-attachments/assets/73832d48-d216-426d-9a25-b73ac2a34906" />
+
 ## Complaint Registry
-![[Screenshot 2026-08-10 102918.png]]
+<img width="1890" height="622" alt="image" src="https://github.com/user-attachments/assets/4e56c278-5590-4fbc-896d-13d663342054" />
+
 
 ## Issues with existing Solution
 1. No Complaint status
