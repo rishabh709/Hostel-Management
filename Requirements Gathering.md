@@ -265,6 +265,181 @@ limitations in prior/current available version
 | 5    | New LH-C           | 90           | Single        | 90             |
 
 
+# ER Diagram
+## Conceptual View
+
+```mermaid
+flowchart RL
+    %% ------- HALL -------
+    %% Attributes (Ovals)
+    hid([<u>Hall_id</u>])
+    hname([Hall_name])
+    rooms([Total Rooms])
+    bulit4_Occupency([bulit4_Occupency])
+    Actual_Ocupency([Actual_Ocupency])
+    Total_Capacity([Total_Capacity])
+    available_Staff([avaliable_staff])
+    style available_Staff stroke-dasharray: 15 15
+    assigned_Staff([assigned_staff])
+    style assigned_Staff stroke-dasharray: 15 15
+
+    %% Entities (Rectangles)
+    Hall[Hall]
+
+
+    %% Connections
+    hid --- Hall
+    hname --- Hall
+    rooms --- Hall
+    bulit4_Occupency --- Hall
+    Actual_Ocupency --- Hall
+    Total_Capacity --- Hall
+    available_Staff --- Hall
+    assigned_Staff --- Hall
+
+   
+    %% ------- ROOM -------
+	%% Attributes (Ovals)
+    roomid([<u>Room_id</u>])
+    built_Occupency([built_Occupency])
+    curr_Occupency([curr_Occupency])
+    %% occupant_id([Occupant_id])
+
+
+    %% Entities (Rectangles)
+    Room[Room]
+    
+    %% Relationships (Diamond)
+
+	%% Composite (Ovals)
+	floor_no([Floor_no])
+	room_no([Room_no])
+	Hall_id([Hall_id])
+
+    %% Connections
+	Hall_id --- roomid
+	floor_no --- roomid
+    room_no --- roomid
+
+
+    roomid --- Room
+    built_Occupency --- Room
+    curr_Occupency --- Room
+    %% occupant_id --- Room
+
+
+	%% ------- STUDENTS -------
+	%% Attributes (Ovals)
+	roll_no([<u>Roll_No</u>])
+	course([Course])
+	dept([Department])
+	year_of_study([Year_of_study])
+	alloted_mess([Alloted_mess])
+
+	%% Entity (Rectangle)
+	Student[Student]
+
+	roll_no --- Student
+	course --- Student
+	dept --- Student
+	year_of_study --- Student
+	alloted_mess --- Student
+
+	%% ------- COMPLAINT -------
+	%% Attributes (Ovals)
+    complaint_id([<u>Complaint_id</u>])
+    complaint_type([Complaint_type])
+    complaint_desc([Description])
+    attachments([Attachments])
+    remarks([Remarks])
+	
+	%% Entities (Rectangle)
+	Complaint[Complaint]
+	
+	%% Relationships (Diamond)
+	
+	%% Composite (Ovals)
+	%% Connections	
+	
+	complaint_id --- Complaint
+	
+	complaint_type --- Complaint
+	complaint_desc --- Complaint
+	attachments --- Complaint
+	remarks --- Complaint
+    
+    
+	%% ------- AUTHORITY -------
+	%% Attributes (Ovals)
+	empId([<u>Employee_Id</u>])
+	designation([Designation])
+	authority_level([Authority_level])
+	emailId([Email_Id])
+	contacts([Contacts])
+	
+	%% Entity (Rectangle)
+	Authority[Authority]
+	
+	%% Connections
+	empId --- Authority
+	designation --- Authority
+	authority_level --- Authority
+	emailId --- Authority
+	contacts --- Authority
+
+
+	%% ------- STAFF -------
+	%% Attributes (Ovals)
+	staff_empId([<u>Staff_Id</u>])
+	staff_skill([Skill])
+	staff_emailId([StaffEmail_Id])
+	staff_contacts([Staff_Contacts])
+	
+	%% Entity (Rectangle)
+	Staff[Staff]
+	
+	%% Connections
+	staff_empId --- Staff
+	staff_skill --- Staff
+	staff_emailId --- Staff
+	staff_contacts --- Staff
+    
+    %% **Entity Relationships** (Diamond)
+    contains{Contains}
+    lives_in{Lives_in}
+    files{files}
+    managed_by{Managed_by}
+    maintained_by{Maintained_by}
+    assigns{Assigns or overlooks}
+   
+
+    %% **Entity Connections**
+    managed_by -- 1 --- Hall
+	Authority --n--- managed_by 
+	
+	Staff -- n --- maintained_by
+	maintained_by -- n --- Hall	
+
+    Room -- n --- contains
+    contains -- 1 --- Hall
+    
+    Room -- 1 --- lives_in
+    lives_in -- n --- Student
+    
+    Complaint -- n --- files
+    files -- n --- Student
+    
+	assigns -- n --- Authority
+	Staff -- n --- assigns
+```
+## Relational Model
+<img width="1917" height="1140" alt="image" src="https://github.com/user-attachments/assets/ef26a8b9-b061-4bdd-bf6c-14abb8d116c2" />
+
+
+
+
+
+
 
 
 
