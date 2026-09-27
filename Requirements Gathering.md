@@ -440,7 +440,7 @@ flowchart RL
 	Staff -- n --- assigns
 ```
 ## Relational Model
-<img width="1917" height="1140" alt="image" src="https://github.com/user-attachments/assets/ef26a8b9-b061-4bdd-bf6c-14abb8d116c2" />
+<img width="1917" height="1198" alt="image" src="https://github.com/user-attachments/assets/f8aa17aa-6d92-4892-9e04-e50a2865ec5d" />
 
 
 
