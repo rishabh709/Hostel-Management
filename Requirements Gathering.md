@@ -165,12 +165,16 @@
 
 
 ## Issues with existing Solution
-1. No Complaint status
-2. No choice for roommates
-3. Expected visits of skilled personals 
-4. No transparency
-5. No Custom time slots based on students availability 
-6. No track of complaints	
+- Roommate changes is not reflected in the ERP
+- No track of complaints
+- No Limited Time Frame for Solutions
+- No contact Details of Skilled Personals in ERP
+- No way of knowing the complaint is assigned to someone
+- No way to know the timed visit of the Skilled Personal 
+- No Complaint status
+- Expected visits of skilled personals 
+- No transparency
+- No Custom time slots based on students availability ### Our Solution (What we Bring to the table)
 
 
 # PPT Format
