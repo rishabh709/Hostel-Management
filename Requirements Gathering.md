@@ -206,7 +206,8 @@ limitations in prior/current available version
 - No Complaint status
 - Expected visits of skilled personals 
 - No transparency
-- No Custom time slots based on students availability ### Our Solution (What we Bring to the table)
+- No Custom time slots based on students availability
+### Our Solution (What we Bring to the table)
 #### Functionalities of Stakeholders
 ###### For Students
 - Centralized Complaint System
